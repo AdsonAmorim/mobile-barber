@@ -1,4 +1,4 @@
-import HomeScreen from "./screens/Home";
+import { HomeScreen } from "./screens/Home";
 import CalendarScreen from "./screens/Calendar";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -11,9 +11,13 @@ export const Routes = () => {
       <Screen
         name="Home"
         component={HomeScreen}
-        options={{ title: "Welcome to the mato" }}
+        options={{ title: "Home", headerShown: false }}
       />
-      <Screen name="Calendar" component={CalendarScreen} />
+      <Screen
+        name="Calendar"
+        component={CalendarScreen}
+        options={{ headerShown: false }}
+      />
     </Navigator>
   );
 };

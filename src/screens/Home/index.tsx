@@ -1,9 +1,18 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { BarberContainer } from "../../components/BarberContainer";
+import { Header } from "../../components/Header";
 
 const mockBarbers = [
   {
+    id: "1",
+    avatar_url: "https://avatars.githubusercontent.com/u/65864485?v=4",
+    name: "Adson Amorim",
+    calendar: "Segunda à sábado",
+    hour: "8h às 18h",
+  },
+  {
+    id: "2",
     avatar_url: "https://avatars.githubusercontent.com/u/65864485?v=4",
     name: "Adson Amorim",
     calendar: "Segunda à sábado",
@@ -11,18 +20,13 @@ const mockBarbers = [
   },
 ];
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
   return (
-    <View className="flex-1 bg-gray-950 m-0 p-0 box-border">
-      <Text>Home</Text>
-
-      <View className="mx-12 my-0 w-full">
+    <View className="flex-1 bg-gray-950 m-0 p-0 box-border  ">
+      <Header showBackButton={false} />
+      <View className="w-full max-w-90 my-0 mx-auto border mt-2 ">
         {mockBarbers.map((mockBarber) => (
-          <BarberContainer
-            {...mockBarber}
-            navigation={navigation}
-            key={mockBarber.name}
-          />
+          <BarberContainer {...mockBarber} key={mockBarber.id} />
         ))}
       </View>
     </View>
@@ -33,4 +37,4 @@ HomeScreen.navigationOptions = {
   title: "Home",
 };
 
-export default HomeScreen;
+export { HomeScreen };
