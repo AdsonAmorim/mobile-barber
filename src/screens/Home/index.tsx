@@ -6,15 +6,17 @@ import { Header } from "../../components/Header";
 const mockBarbers = [
   {
     id: "1",
-    avatar_url: "https://avatars.githubusercontent.com/u/65864485?v=4",
-    name: "Adson Amorim",
+    avatar_url:
+      "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+    name: "Sêneca",
     calendar: "Segunda à sábado",
     hour: "8h às 18h",
   },
   {
     id: "2",
-    avatar_url: "https://avatars.githubusercontent.com/u/65864485?v=4",
-    name: "Adson Amorim",
+    avatar_url:
+      "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    name: "Marco Aurélio",
     calendar: "Segunda à sábado",
     hour: "8h às 18h",
   },

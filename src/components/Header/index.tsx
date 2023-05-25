@@ -20,9 +20,14 @@ interface IRoute extends RouteProp<ParamListBase> {
 
 const mockHeaderContentByRouteName = {
   Home: (
-    <View className="max-w-[150]">
+    <View>
       <Text className="text-white text-xl font-semibold">
-        Bem vindo, <Text className="text-green-500 "> {"Adson Amorim"}</Text>
+        Bem vindo,{" "}
+        <Text className="text-green-500 ">
+          {" "}
+          {"\n"}
+          {"Epiteto"}
+        </Text>
       </Text>
     </View>
   ),
@@ -51,7 +56,7 @@ export const Header = ({ showBackButton }: HeaderProps) => {
         <View className="w-[56] h-[56] rounded-full">
           <Image
             source={{
-              uri: "https://avatars.githubusercontent.com/u/65864485?v=4",
+              uri: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
             }}
             className="w-full h-full rounded-full"
           />
