@@ -1,9 +1,11 @@
-import { HomeScreen } from "./screens/Home";
-import CalendarScreen from "./screens/Calendar";
+import { HomeScreen } from "../screens/Home";
+import CalendarScreen from "../screens/Calendar";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const { Navigator, Screen } = createNativeStackNavigator();
+import { AppStackParamList } from "./type";
+
+const { Navigator, Screen } = createNativeStackNavigator<AppStackParamList>();
 
 export const Routes = () => {
   return (
