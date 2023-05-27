@@ -20,11 +20,19 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "package": "com.tech.barberapp",
+        "versionCode": 1
+      },
+      "package": "com.adsonamorim.mobilebarber"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "98808a06-5ca1-4022-a2f1-bf2170ca5913"
+      }
     }
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
   }
 }
