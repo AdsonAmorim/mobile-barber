@@ -28,7 +28,7 @@ const BarberContainer = ({
 
   return (
     <TouchableOpacity onPress={handlePress}>
-      <View className=" bg-gray-800 border text-neutral-50  h-[112] rounded-md mt-5 flex items-center flex-row justify-around">
+      <View className="bg-gray-800 border text-neutral-50 h-[112] rounded-md mt-5 flex items-center flex-row justify-around">
         <View className="w-[72] h-[72] rounded-full">
           <Image
             source={{
@@ -37,17 +37,17 @@ const BarberContainer = ({
             className="w-full h-full rounded-full"
           />
         </View>
-        <View className="w-6/12 flex flex-col gap-y-0 m-0 p-0">
-          <Text className="text-neutral-50 font-bold text-lg">{name}</Text>
+        <View className="flex flex-col w-6/12 p-0 m-0 gap-y-0">
+          <Text className="text-lg font-bold text-neutral-50">{name}</Text>
 
-          <View className="flex items-center justify-start flex-row gap-x-2">
+          <View className="flex flex-row items-center justify-start gap-x-2">
             <Icon name="calendar" color="#FFF" size={20} />
-            <Text className="text-neutral-50 font-medium">{calendar}</Text>
+            <Text className="font-medium text-neutral-50">{calendar}</Text>
           </View>
 
-          <View className="flex items-center justify-start flex-row gap-x-2">
+          <View className="flex flex-row items-center justify-start gap-x-2">
             <Icon name="clockcircleo" color="#FFF" size={20} />
-            <Text className="text-neutral-50 font-medium">{hour}</Text>
+            <Text className="font-medium text-neutral-50">{hour}</Text>
           </View>
         </View>
       </View>

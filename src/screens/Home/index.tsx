@@ -1,7 +1,9 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import { BarberContainer } from "../../components/BarberContainer";
 import { Header } from "../../components/Header";
+
+import { HomeScreenNavigationProp, HomeScreenRouteProp } from "./types";
 
 const mockBarbers = [
   {
@@ -22,11 +24,19 @@ const mockBarbers = [
   },
 ];
 
-const HomeScreen = () => {
+interface HomeProps {
+  navigation: HomeScreenNavigationProp;
+  route: HomeScreenRouteProp;
+}
+
+const HomeScreen = ({ navigation, route }: HomeProps) => {
   return (
-    <View className="flex-1 bg-gray-950 m-0 p-0 box-border  ">
+    <View className="box-border flex-1 p-0 m-0 bg-gray-950">
       <Header showBackButton={false} />
-      <View className="w-full max-w-90 my-0 mx-auto border mt-2 ">
+      <View className="w-full mx-auto my-0 mt-2 border max-w-90 ">
+        <Text className="mt-5 text-3xl font-medium text-neutral-50">
+          Barbeiros
+        </Text>
         {mockBarbers.map((mockBarber) => (
           <BarberContainer {...mockBarber} key={mockBarber.id} />
         ))}
