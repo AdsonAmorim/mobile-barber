@@ -5,13 +5,7 @@ import { Image } from "expo-image";
 import Icon from "react-native-vector-icons/AntDesign";
 import { useNavigation } from "@react-navigation/native";
 
-interface BarberContainerProps {
-  id: string;
-  name: string;
-  calendar: string;
-  avatar_url: string;
-  hour: string;
-}
+import { BarberContainerProps } from "../../types";
 
 const BarberContainer = ({
   avatar_url,

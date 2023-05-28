@@ -15,11 +15,11 @@ const CalendarScreen = ({}) => {
   const { params } = route;
 
   return (
-    <View className="flex-1 bg-gray-950 m-0 p-0 box-border">
+    <View className="box-border flex-1 p-0 m-0 bg-gray-950">
       <Text>Calendar</Text>
       <Header showBackButton />
 
-      <View className="mx-12 my-2 w-full ">
+      <View className="w-full mx-12 my-2 ">
         <Text className="text-white"> hello word {params.userId}</Text>
       </View>
     </View>
